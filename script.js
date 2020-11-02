@@ -28,6 +28,16 @@ window.onload = function() {
 function playGame(){
   // *CODE GOES BELOW HERE *
   let numberGuess = document.getElementById('number-guess').value;
+  displayResult(numberGuess);
+
+}
+
+/**
+ * Show the result for if the guess it too high, too low, or correct
+ * HINT: Use if, else if, else statement 
+ */
+// *CODE GOES BELOW HERE *
+function displayResult(numberGuess) {
   if(numberGuess > correctNumber) {
     console.log("too high");
   }
@@ -38,13 +48,6 @@ function playGame(){
     console.log("Correct");
   }
 }
-
-/**
- * Show the result for if the guess it too high, too low, or correct
- * HINT: Use if, else if, else statement 
- */
-// *CODE GOES BELOW HERE *
-
 
 
 /**
