@@ -14,11 +14,12 @@
 // Variable to store the list of guesses 
 
 // Variable for store the correct random number 
-
+let correctNumber = getRandomNumber();
+console.log(correctNumber);
 
 window.onload = function() {
     document.getElementById("number-submit").addEventListener("click", playGame);
-    document.getElementById("restart-game").addEventListener("click", initGame)
+    document.getElementById("restart-game").addEventListener("click", initGame);
 }
 
 /**
@@ -58,7 +59,9 @@ function resetResultContent(){
  * HINT: Use Math.random 
  */
 function getRandomNumber(){
-  // *CODE GOES BELOW HERE *
+  let randomNumber = Math.random(); // 이렇게하면 소수점나오는 랜덤숫자가 나오고
+  let wholeNumber = Math.floor(randomNumber*100)+1;  // randomNumber argument를 Math.floor로해서 소수점 숫자를 없애버린다 그리고 +1을 해서 99까지 나오던걸 100까지 나오게 해줌
+  return wholeNumber;
 }
 
 /**
