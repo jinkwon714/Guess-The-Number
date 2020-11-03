@@ -57,6 +57,14 @@ function displayResult(numberGuess) {
  */
 function initGame(){
   // *CODE GOES BELOW HERE *
+  // Reset the correctNumber 
+  // Reset the result display 
+  // Reset the guesses array 
+  // Reset the guesses history display
+  correctNumber = getRandomNumber();
+  document.getElementById("result").innerHTML = "";
+  guesses = [];
+  displayHistory();
 }
 
 /**
